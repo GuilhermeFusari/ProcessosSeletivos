@@ -6,7 +6,7 @@ def get_temperature(cep):
     address_data = request.json()
     cidade = address_data['localidade']
 
-    API_KEY = "4f7931f7a3469620570791ce0241f89b"
+    API_KEY = "ChaveApi"
     link = f"https://api.openweathermap.org/data/2.5/weather?q={cidade}&appid={API_KEY}&lang=pt_br"
 
     requisicao = requests.get(link)
